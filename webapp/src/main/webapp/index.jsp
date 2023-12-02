@@ -44,7 +44,7 @@ button {
 </style>   
 </head>    
 <body>    
-    <center> <h1> Employee Login Form </h1> </center>   
+    <center> <h1> Visa application form </h1> </center>   
     <form>  
         <div class="container">   
             <label>Username : </label>   
