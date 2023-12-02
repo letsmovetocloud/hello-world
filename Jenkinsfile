@@ -1,5 +1,5 @@
 pipeline {
-    agent mavenslaveserver
+    agent maven
 
     stages {
         stage ('Compile Stage') {
