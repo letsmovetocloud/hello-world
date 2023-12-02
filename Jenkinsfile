@@ -1,11 +1,11 @@
 pipeline {
-    agent any
+    agent mavenslaveserver
 
     stages {
         stage ('Compile Stage') {
 
             steps {
-                withMaven(maven : 'maven') {
+                withMaven(maven : 'Maven_3.9.5') {
                     sh 'mvn clean compile'
                 }
             }
@@ -14,7 +14,7 @@ pipeline {
         stage ('Testing Stage') {
 
             steps {
-                withMaven(maven : 'maven') {
+                withMaven(maven : 'Maven_3.9.5') {
                     sh 'mvn test'
                 }
             }
@@ -23,7 +23,7 @@ pipeline {
 
         stage ('Deployment Stage') {
             steps {
-                withMaven(maven : 'maven') {
+                withMaven(maven : 'Maven_3.9.5') {
                     sh 'mvn deploy'
                 }
             }
