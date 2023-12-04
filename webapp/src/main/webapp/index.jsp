@@ -44,7 +44,7 @@ button {
 </style>   
 </head>    
 <body>    
-    <center> <h1> College student application form </h1> </center>   
+    <center> <h1> visa application form </h1> </center>   
     <form>  
         <div class="container">   
             <label>Username : </label>   
